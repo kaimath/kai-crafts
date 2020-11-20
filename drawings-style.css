@@ -1,0 +1,78 @@
+body {
+	display: grid;
+	grid-template-areas: 
+	". header header header header ."
+	"nav section section section section .";
+	background-color: lavenderblush; 
+}
+
+header {
+	grid-area: header;
+	display: flex;
+	align-items: center;
+	margin-bottom: -8.25%;
+}
+
+header h1 {
+	font-size: 3.5rem;
+}
+
+header img {
+	margin-bottom: 2%;
+}
+
+.multicolor-text {
+	background-image: linear-gradient(to left, violet, blue, yellow, orange, red);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+}
+
+nav {
+	grid-area: nav;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	margin-top: 30%;
+}
+
+.nav-button {
+	display: inline-block;
+	width: fit-content;
+	margin-right: 10%;
+	margin-bottom: 15%;
+	text-decoration-style: dotted;
+}
+
+section {
+	grid-area: section;
+	position: relative;
+	border: 5px solid yellow;
+	background-color: floralwhite;
+}
+
+section::after{
+	content: '';
+	position: absolute;
+	top: -10px;
+	left: -10px;
+	right: -10px;
+	bottom: -10px;
+	background: fuchsia;
+	z-index: -1;
+}
+
+.marquee {
+	margin-top: 3%;
+	margin-left: 3%;
+	color: hotpink;
+}
+
+#drawings {
+	border: dashed 3px chartreuse;
+	margin: 5%;
+}
+
+#fake-draw {
+	height:750px;
+}
