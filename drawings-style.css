@@ -1,5 +1,7 @@
 :root {
 	--outer-border-color: fuchsia;
+	--lavender-button-color: #e2cafc;
+	--green-button-color: #c2ffe0;
 }
 
 body {
@@ -45,7 +47,22 @@ nav {
 	width: fit-content;
 	margin-right: 10%;
 	margin-bottom: 1rem;
-	text-decoration-style: dotted;
+	background-color: var(--lavender-button-color); /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: left;
+	text-decoration-line: underline;
+  text-decoration-style: dashed;
+	text-decoration-color: white;
+  font-size: 16px;
+	border-radius: 40%;
+	transition-duration: 0.4s;
+}
+
+.nav-button:hover {
+  background-color: var(--green-button-color); /* Green */
+  color: white;
 }
 
 section {
