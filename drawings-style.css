@@ -37,14 +37,14 @@ nav {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
-	margin-top: 30%;
+	margin-top: 1rem;
 }
 
 .nav-button {
 	display: inline-block;
 	width: fit-content;
 	margin-right: 10%;
-	margin-bottom: 15%;
+	margin-bottom: 1rem;
 	text-decoration-style: dotted;
 }
 
@@ -68,14 +68,17 @@ section::after{
 }
 
 .marquee {
-	margin-top: 3%;
-	margin-left: 3%;
-	color: hotpink;
+	margin-top: 1rem;
+	margin-left: 1.5rem;
+	color: fuchsia;
 }
 
 #drawings {
 	border: dashed 3px chartreuse;
-	margin: 5%;
+	margin-top: 1.5rem;
+	margin-left: 1.5rem;
+	margin-right: 1.5rem;
+	margin-bottom: 1.5rem;
 }
 
 #fake-draw {
