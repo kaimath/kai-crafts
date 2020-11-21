@@ -59,11 +59,19 @@ nav {
   font-size: 16px;
 	border-radius: 40%;
 	transition-duration: 0.4s;
+	outline: none;
 }
 
 .nav-button:hover {
   background-color: var(--green-button-color); /* Green */
   color: white;
+	outline: none;
+}
+
+.nav-button:active {
+  background-color: blue;
+  transform: translateY(4px);
+	outline: none;
 }
 
 section {
@@ -78,9 +86,9 @@ section {
 .marquee {
 	margin-top: 3%;
 	margin-left: 3%;
-	color: hotpink;
+	color: fuchsia;
 	position: relative;
-	overflow: hidden; 
+	overflow: hidden;
 	animation: marquee 5s linear infinite;
 }
 
