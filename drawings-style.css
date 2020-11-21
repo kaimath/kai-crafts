@@ -14,7 +14,7 @@ header {
 	grid-area: header;
 	display: flex;
 	align-items: center;
-	margin-bottom: -8.25%;
+	margin-bottom: -2.9rem;
 }
 
 header h1 {
@@ -22,7 +22,7 @@ header h1 {
 }
 
 header img {
-	margin-bottom: 2%;
+	margin-bottom: .8rem;
 }
 
 .multicolor-text {
