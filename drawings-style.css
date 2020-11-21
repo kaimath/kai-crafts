@@ -8,6 +8,8 @@ body {
 	". header header header header ."
 	"nav section section section section .";
 	background-color: lavenderblush;
+	background-image: url("tile-bg-molly.png");
+  background-repeat: repeat;
 }
 
 header {
@@ -48,16 +50,16 @@ nav {
 	text-decoration-style: dotted;
 }
 
-section {
+#main {
 	grid-area: section;
 	position: relative;
-	border: 5px solid yellow;
-	background-image: url("tile-bg-notepad-pink.jpg");
+	border: 5px solid #ffd519;
+	background-image: url("tile-bg-notepad.jpg");
   background-repeat: repeat;
   background-size: 100%;
 }
 
-section::after{
+#main::after{
 	content: '';
 	position: absolute;
 	top: -10px;
@@ -71,11 +73,35 @@ section::after{
 .marquee {
 	margin-top: 3%;
 	margin-left: 3%;
-	color: hotpink;
+	color: fuchsia;
+
+	overflow: hidden;
+}
+
+.marquee div {
+  display: block;
+  width: 200%;
+  height: 30px;
+
+  position: absolute;
+  overflow: hidden;
+
+  animation: marquee 5s linear infinite;
+}
+
+.marquee span {
+  float: right;
+  width: 50%;
+}
+
+
+@keyframes marquee {
+  0% { right: 0; }
+  100% { right: -100%; }
 }
 
 #drawings {
-	border: dashed 3px chartreuse;
+	border: dashed 5px chartreuse;
 	margin: 5%;
 }
 
