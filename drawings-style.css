@@ -1,9 +1,9 @@
 body {
 	display: grid;
-	grid-template-areas: 
+	grid-template-areas:
 	". header header header header ."
 	"nav section section section section .";
-	background-color: lavenderblush; 
+	background-color: lavenderblush;
 }
 
 header {
@@ -48,7 +48,9 @@ section {
 	grid-area: section;
 	position: relative;
 	border: 5px solid yellow;
-	background-color: floralwhite;
+	background-image: url("tile-bg-notepad-pink.jpg");
+  background-repeat: repeat;
+  background-size: 100%;
 }
 
 section::after{
