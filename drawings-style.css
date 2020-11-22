@@ -47,21 +47,19 @@ nav {
 
 .nav-button {
 	display: inline-block;
-	/*width: fit-content;*/
+	width: fit-content;
 	margin-right: 10%;
 	margin-bottom: 1rem;
-	background: url(blob.svg) no-repeat top left;
-  background-size: cover;
 	background-color: var(--lavender-button-color); /* Green */
   border: none;
   color: white;
-  /*padding: 15px 32px;*/
+  padding: 15px 32px;
   text-align: left;
 	text-decoration-line: underline;
   text-decoration-style: dashed;
 	text-decoration-color: white;
   font-size: 16px;
-	/*border-radius: 40%;*/
+	border-radius: 40%;
 	transition-duration: 0.4s;
 	outline: none;
 }
@@ -75,6 +73,37 @@ nav {
 .nav-button:active {
   background-color: blue;
   transform: translateY(4px);
+	outline: none;
+}
+
+nav a {
+	transition-duration: 2s;
+	color: white;
+	text-align: left;
+	text-decoration-line: underline;
+  text-decoration-style: dashed;
+	text-decoration-color: white;
+  font-size: 16px;
+}
+
+nav svg a path {
+	fill: var(--lavender-button-color);
+	transform: translate(100px, 100px);
+}
+
+nav svg a text {
+	x: "100";
+	y: "100";
+}
+
+nav svg a:hover path {
+	fill: var(--green-button-color); /* Green */
+	outline: none;
+}
+
+nav svg a:active path {
+	fill: blue;
+  transform: translate(100px, 104px);
 	outline: none;
 }
 
